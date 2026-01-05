@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Hexagon, ChevronDown, Menu, X } from 'lucide-react';
+import { Hexagon, CaretDown, List, X } from '@phosphor-icons/react';
 import Button from './Button';
 
 const Navbar: React.FC = () => {
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
-             <Hexagon className="w-8 h-8 text-electric stroke-[1.5]" />
+             <Hexagon weight="light" className="w-8 h-8 text-electric" />
              <div className="absolute inset-0 bg-electric/20 blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
           <span className="text-xl md:text-2xl font-display font-bold tracking-wider text-white uppercase">Lux Ops</span>
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           {/* Demos Dropdown */}
           <div className="relative group">
             <button className="flex items-center gap-1 text-gray-400 hover:text-electric font-mono text-sm uppercase tracking-wide py-2 transition-colors">
-              Demos <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
+              Demos <CaretDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
             </button>
             <div className="absolute top-full left-0 mt-2 w-56 bg-panel border border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
               <div 
@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
           className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? <X size={24} /> : <List size={24} />}
         </button>
       </div>
 

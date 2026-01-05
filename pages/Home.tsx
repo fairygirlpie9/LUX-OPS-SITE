@@ -6,17 +6,17 @@ import {
   CheckCircle, 
   XCircle, 
   Gauge, 
-  Plane, 
+  Airplane, 
   Truck, 
-  Maximize2, 
-  MessageCircle, 
+  CornersOut, 
+  ChatCircle, 
   Code, 
   Rocket,
   Flag,
   Trophy,
   ArrowRight,
   Hexagon
-} from 'lucide-react';
+} from '@phosphor-icons/react';
 import Button from '../components/Button';
 
 const Home: React.FC = () => {
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
           <div className="flex gap-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
             {[
               { id: 'racing', label: 'Racing', icon: <Gauge size={16}/> },
-              { id: 'drone', label: 'Drone', icon: <Plane size={16}/> },
+              { id: 'drone', label: 'Drone', icon: <Airplane size={16}/> },
               { id: 'fleet', label: 'Fleet', icon: <Truck size={16}/> }
             ].map((btn) => (
               <button 
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
           <div className="absolute bottom-4 right-4 z-10">
             <Link to={`/demo/${activeDemo}`} target="_blank">
                <button type="button" className="bg-black border border-white/20 hover:border-electric text-white p-3 transition-colors group">
-                 <Maximize2 className="w-5 h-5 group-hover:text-electric" />
+                 <CornersOut className="w-5 h-5 group-hover:text-electric" />
                </button>
             </Link>
           </div>
@@ -170,7 +170,7 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8 relative">
              <div className="hidden md:block absolute top-12 left-0 right-0 h-px bg-white/10"></div>
              {[
-               { icon: <MessageCircle size={32} />, step: "01.", title: "Discovery", desc: "15-minute call to understand your data needs." },
+               { icon: <ChatCircle size={32} />, step: "01.", title: "Discovery", desc: "15-minute call to understand your data needs." },
                { icon: <Code size={32} />, step: "02.", title: "Build", desc: "We integrate data and build custom AI logic." },
                { icon: <Rocket size={32} />, step: "03.", title: "Deploy", desc: "Launch in 2 weeks. Train your team." }
              ].map((item, idx) => (
@@ -196,7 +196,7 @@ const Home: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { icon: <Flag />, title: "Racing & Motorsports", items: ["Make split-second calls", "Tire degradation tracking"] },
-            { icon: <Plane />, title: "Drone & Aerial", items: ["Monitor fleet battery", "Prevent crashes"] },
+            { icon: <Airplane />, title: "Drone & Aerial", items: ["Monitor fleet battery", "Prevent crashes"] },
             { icon: <Truck />, title: "Logistics", items: ["Optimize routes", "Boost efficiency"] },
             { icon: <Hexagon />, title: "Custom Solutions", items: ["Any API integration", "Bespoke decision logic"] }
           ].map((card, idx) => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hexagon, Linkedin, Twitter, MapPin, Mail } from 'lucide-react';
+import { Hexagon, LinkedinLogo, TwitterLogo, MapPin, Envelope } from '@phosphor-icons/react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         {/* Column 1: Brand */}
         <div>
           <div className="flex items-center gap-2 mb-6">
-            <Hexagon className="w-6 h-6 text-electric" />
+            <Hexagon weight="fill" className="w-6 h-6 text-electric" />
             <span className="text-lg font-display font-bold text-white uppercase tracking-widest">LUX OPS</span>
           </div>
           <p className="text-gray-500 mb-6 max-w-xs font-mono text-xs">
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
           <h4 className="text-white font-bold mb-4 uppercase">Comms</h4>
           <div className="space-y-4">
             <div className="flex items-start gap-3 text-gray-500">
-              <Mail className="w-4 h-4 text-electric shrink-0" />
+              <Envelope className="w-4 h-4 text-electric shrink-0" />
               <a href="mailto:hello@lux-ops.com" className="hover:text-white transition-colors uppercase">hello@lux-ops.com</a>
             </div>
             <div className="flex items-start gap-3 text-gray-500">
@@ -56,10 +56,10 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex gap-4 mt-6">
               <a href="#" className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-electric border border-white/10 hover:border-electric transition-all">
-                <Linkedin className="w-4 h-4" />
+                <LinkedinLogo className="w-4 h-4" />
               </a>
               <a href="#" className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-electric border border-white/10 hover:border-electric transition-all">
-                <Twitter className="w-4 h-4" />
+                <TwitterLogo className="w-4 h-4" />
               </a>
             </div>
           </div>

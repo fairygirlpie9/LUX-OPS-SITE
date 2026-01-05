@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flag, Plane, Truck, ArrowRight, Hexagon, Cpu } from 'lucide-react';
+import { Flag, Airplane, Truck, ArrowRight, Hexagon, Cpu } from '@phosphor-icons/react';
 import Button from '../components/Button';
 
 const Industries: React.FC = () => {
@@ -56,7 +56,7 @@ const Industries: React.FC = () => {
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="flex items-center gap-3 mb-4 text-electric">
-                <Plane className="w-6 h-6" />
+                <Airplane className="w-6 h-6" />
                 <span className="font-mono font-bold tracking-widest uppercase text-sm">Drone Operations</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase">Scale Your Fleet Safely</h2>

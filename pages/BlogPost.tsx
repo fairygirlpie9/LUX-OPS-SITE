@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from '@phosphor-icons/react';
 import Button from '../components/Button';
 
 const BlogPost: React.FC = () => {

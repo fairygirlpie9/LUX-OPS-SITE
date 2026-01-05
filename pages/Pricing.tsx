@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle, HelpCircle } from 'lucide-react';
+import { CheckCircle, Question } from '@phosphor-icons/react';
 import Button from '../components/Button';
 
 const Pricing: React.FC = () => {
@@ -132,7 +132,7 @@ const Pricing: React.FC = () => {
               ].map((faq, i) => (
                 <div key={i} className="border-b border-white/10 pb-8 last:border-0">
                   <h3 className="text-base md:text-lg font-bold text-white mb-2 flex items-start md:items-center gap-3 font-display uppercase">
-                    <HelpCircle className="w-5 h-5 text-gray-500 shrink-0 mt-0.5 md:mt-0" />
+                    <Question className="w-5 h-5 text-gray-500 shrink-0 mt-0.5 md:mt-0" />
                     {faq.q}
                   </h3>
                   <p className="text-gray-400 pl-8 leading-relaxed font-mono text-sm">{faq.a}</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy, Target, Globe } from 'lucide-react';
+import { Trophy, Target, Globe } from '@phosphor-icons/react';
 import Button from '../components/Button';
 
 const About: React.FC = () => {
